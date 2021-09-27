@@ -15,29 +15,22 @@ use the fonts in other ways in the font hierarchy etc. */
 /* change / delete some of these - note: all variables are listed twice */
 
 :root {
-  --bg-color: red;
+  --bg-color: #be0f0f;
   --link-color: green;
   --link-hover-color: blue;
-  --color-4: hotpink;
-  --color-5: rebeccapurple;
-
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
+  --color-2: #f7d138;
+  --color-3: #f77118;
+  --color-4: #f05fe6;
+  --color-5: black;
+  --font-h1: "anton", rergular;
+  --primary-font: "Anton", regular;
+  --secondary-font: "corbel", regular;
+  --main-text-font: "montserrat", light;
   --main-text-color: #000;
 
   --white-space: 1rem;
 
-  --bg-color: #000;
-  --link-color: #000;
-  --link-hover-color: #000;
-  --color-4: #000;
-  --color-5: #000;
-
-  --primary-font: sans-serif;
-  --secondary-font: serif;
-  --main-text-color: #000;
-
-  --white-space: 2rem;
+  /*  --white-space: 2rem; */
 }
 
 html {
@@ -69,14 +62,15 @@ footer {
   text-transform: uppercase;
   letter-spacing: -2px;
   padding-right: 0.75em;
-  font-weight: bold;
+  font-weight: regular;
   color: white;
+  font-family: var(--font-h1);
 }
 
 .header-wrapper h2 {
   font-size: 1.6em;
   color: rgba(255, 255, 255, 0.95);
-  font-weight: bold;
+  font-weight: regular;
   margin: var(--white-space) 0;
 }
 
@@ -125,11 +119,11 @@ ul li:last-child {
 }
 
 .color-swatch-2 {
-  background-color: var(--link-color);
+  background-color: var(--color-2);
 }
 
 .color-swatch-3 {
-  background-color: var(--link-hover-color);
+  background-color: var(--color-3);
 }
 
 .color-swatch-4 {
@@ -226,12 +220,12 @@ button:active {
 
 .h2-sample {
   font-family: var(--secondary-font);
-  font-style: italic;
+  font-style: regular;
   font-size: 1.25rem;
 }
 
 p.typography-sample {
-  font-family: var(--secondary-font);
+  font-family: var(--main-text-font);
   line-height: 1.5;
   max-width: 960px;
 }
@@ -241,7 +235,7 @@ strong {
 }
 
 em {
-  font-style: italic;
+  font-style: regular;
 }
 
 a {
