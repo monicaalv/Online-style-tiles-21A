@@ -16,8 +16,8 @@ use the fonts in other ways in the font hierarchy etc. */
 
 :root {
   --bg-color: #be0f0f;
-  --link-color: green;
-  --link-hover-color: blue;
+  --link-color: rgb(128, 0, 6);
+  --link-hover-color: #f7d138;
   --color-2: #f7d138;
   --color-3: #f77118;
   --color-4: #f05fe6;
@@ -25,8 +25,10 @@ use the fonts in other ways in the font hierarchy etc. */
   --font-h1: "anton", rergular;
   --primary-font: "Anton", regular;
   --secondary-font: "corbel", regular;
-  --main-text-font: "montserrat", light;
+  --main-text-font: "spartan", light;
   --main-text-color: #000;
+  --font-h4: "spartan", light;
+  --h3-color: #000;
 
   --white-space: 1rem;
 
@@ -62,7 +64,7 @@ footer {
   text-transform: uppercase;
   letter-spacing: -2px;
   padding-right: 0.75em;
-  font-weight: regular;
+  font-weight: normal;
   color: white;
   font-family: var(--font-h1);
 }
@@ -76,7 +78,8 @@ footer {
 
 .header-wrapper h3 {
   font-size: 1.2rem;
-  font-style: italic;
+  /* font-style: italic; */
+  color: var(--h3-color);
 }
 
 .header-wrapper h4 {
@@ -93,9 +96,9 @@ section {
 }
 
 .section-heading {
-  font-style: italic;
+  /*   font-style: italic; */
   font-size: 1.3rem;
-  color: #777;
+  color: black;
   margin: 0.5rem 0;
 }
 
@@ -112,6 +115,7 @@ ul {
 
 ul li:last-child {
   margin-right: 0;
+  color: var(--);
 }
 
 .color-swatch-1 {
@@ -202,7 +206,7 @@ button:focus-within {
 
 button:hover {
   background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
+  /* transform: scale(3) rotate(40deg); */
 }
 
 button:active {
@@ -228,6 +232,7 @@ p.typography-sample {
   font-family: var(--main-text-font);
   line-height: 1.5;
   max-width: 960px;
+  /* font-weight: lighter; */
 }
 
 strong {
@@ -265,6 +270,7 @@ p[class*="font-details-"] {
 .adjectives ul {
   font-size: 2rem;
   opacity: 0.5;
+  color: var(--color-4);
 }
 
 .adjectives ul {
